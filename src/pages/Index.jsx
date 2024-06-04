@@ -1,4 +1,4 @@
-import { Container, VStack, Heading, Text, Box, Button, Flex } from "@chakra-ui/react";
+import { Container, VStack, Heading, Text, Box, Button, Flex, Link as ChakraLink } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
 const Index = () => {
@@ -14,8 +14,11 @@ const Index = () => {
             <Button as={Link} to="/discussions" colorScheme="teal" size="lg" mb={4}>
               View Discussions
             </Button>
-            <Button as={Link} to="/create-post" colorScheme="blue" size="lg">
+            <Button as={Link} to="/create-post" colorScheme="blue" size="lg" mb={4}>
               Create a Post
+            </Button>
+            <Button as={Link} to="/register" colorScheme="green" size="lg">
+              Register
             </Button>
           </Flex>
         </Box>
